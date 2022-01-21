@@ -16,3 +16,5 @@ def selection_sort(values):
         sorted_list.append(values.pop(index_to_move))
         print("%-25s, %-25s" % (values, sorted_list))
     return sorted_list
+
+print(selection_sort([5, 8, 1, 4, 7, 9, 6, 3, 2]))
