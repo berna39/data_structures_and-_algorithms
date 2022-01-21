@@ -11,3 +11,9 @@ def BubbleSort(array):
                 array[j] = array[j+1]
                 array[j+1] = temp
     return array
+
+# Driver code
+if __name__ == '__main__':
+    Array = [-1,9,21,34,1,5,6,8,10,23,25,27,31]
+    print("Array before sorting: ", Array)
+    print("Array after sorting: ", BubbleSort(Array))
