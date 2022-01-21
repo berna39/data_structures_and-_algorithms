@@ -12,3 +12,6 @@ def insertionSort(Array):
         Array[j + 1] = key
     return Array
 
+if __name__ == '__main__':
+    Array = [-2, -3, -1, 11, 9, 12, 4, -5, -12, 6, 19, 20]
+    print(insertionSort(Array))
