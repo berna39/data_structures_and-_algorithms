@@ -20,3 +20,7 @@ def binary_search(collection, target):
         else:
             last = midpoint - 1
     return None
+
+for n in search_names:
+    index = binary_search(names, n)
+    print(index)
