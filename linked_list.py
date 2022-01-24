@@ -45,3 +45,17 @@ class LinkedList:
         new_node = Node(data)
         new_node.next_node = self.head
         self.head = new_node
+
+    def search(self, key):
+        """
+        search for the first node containing data that matches the key
+        returns the node or "None" if not found
+        takes 0(n) time
+        """
+        current = self.head
+        while current:
+            if current.data == key:
+                return current
+            else:
+                current = current.next_node
+        return None
