@@ -119,3 +119,23 @@ class LinkedList:
                 current = current.next_node
                 position += 1
             return current
+
+
+    def __repr__(self):
+        """
+        returns a string representation of the list
+        takes 0(n) time
+        """
+        nodes = []
+        current = self.head
+
+        while current:
+            if current is self.head:
+                nodes.append("[head: %s]" % current.data)
+            elif current.next_node is None:
+                nodes.append("[Tail: %s]" % current.data)
+            else:
+                nodes.append("[%s]" % current.data)
+
+            current = current.next_node
+        return "->".join(nodes)
