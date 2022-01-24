@@ -34,7 +34,7 @@ def HeapSort(Array):
 
 
 if __name__ == "__main__":
-    Array = [-2, -3, -1, 11, 9, 12, 4, -5, -12, 6, 19, 20]
+    Array = [-2, -3, -1, 11, 9, 5, 4, -5, -12, 6, 19, 13]
     HeapSort(Array)
     n = len(Array)
     print("Sorted array is")

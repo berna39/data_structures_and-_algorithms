@@ -4,10 +4,6 @@ def sum(numbers):
         total += number
     return total
 
-
-# print(sum([1, 2, 7, 9]))
-
-
 def recusrive_Sum(numbers):
     if not numbers:
         return 0
