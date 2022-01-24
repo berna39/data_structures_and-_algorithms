@@ -30,3 +30,13 @@ def HeapSort(Array):
 
         # Heapify root element
         Heapify(Array, i, 0)
+
+
+
+if __name__ == "__main__":
+    Array = [-2, -3, -1, 11, 9, 12, 4, -5, -12, 6, 19, 20]
+    HeapSort(Array)
+    n = len(Array)
+    print("Sorted array is")
+    for i in range(n):
+        print("%d " % Array[i], end='')
